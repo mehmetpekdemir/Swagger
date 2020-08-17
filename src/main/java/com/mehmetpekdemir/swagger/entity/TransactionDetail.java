@@ -1,7 +1,5 @@
 package com.mehmetpekdemir.swagger.entity;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,9 +19,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "transaction_details")
-public class TransactionDetail implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class TransactionDetail {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

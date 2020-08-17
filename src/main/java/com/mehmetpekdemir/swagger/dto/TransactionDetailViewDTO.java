@@ -1,5 +1,7 @@
 package com.mehmetpekdemir.swagger.dto;
 
+import java.io.Serializable;
+
 import com.mehmetpekdemir.swagger.entity.TransactionDetail;
 
 import io.swagger.annotations.ApiModel;
@@ -12,8 +14,10 @@ import lombok.Getter;
  * @since 1.0
  */
 @Getter
-@ApiModel(value = "Transaction Detail View ",description = "All details about the Trancation Detail")
-public final class TransactionDetailViewDTO {
+@ApiModel(value = "Transaction Detail View ", description = "All details about the Trancation Detail")
+public final class TransactionDetailViewDTO implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	@ApiModelProperty(value = "From Account")
 	private final String fromAccount;
