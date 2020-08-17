@@ -14,7 +14,7 @@
 	<artifactId>swagger</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>swagger</name>
-	<description>Swagger project</description>
+	<description>Swagger project for Spring Boot</description>
 
 	<properties>
 		<java.version>11</java.version>
